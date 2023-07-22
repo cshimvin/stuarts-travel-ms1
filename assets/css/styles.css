@@ -1,5 +1,64 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@100;200;300;400;500;600;700;800;900');
 
 body {
     font-family: "Montserrat", sans-serif;
+}
+
+.heading {
+    min-height: 240px;
+    background-color: lightgray;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.heading-title {
+    font-weight: 100;
+    font-size: 48px;
+}
+
+.heading-subtitle {
+    font-weight: 200;
+    font-size: 36px;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+/* Footer */
+
+footer {
+    background-color: lightgrey;
+    min-height:20px;
+    margin: 0;
+    color: white;
+}
+
+.social-networks {
+    padding-bottom: 15px;
+}
+
+/* Taken from Code Institute lesson https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/b51f7b8b815c4bcd9979d2281b6d97a9/?child=last */
+.social-networks li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background: blue;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-networks li a i:hover {
+    background-color: lightblue;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
 }
