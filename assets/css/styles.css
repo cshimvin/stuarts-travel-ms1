@@ -17,6 +17,15 @@ nav {
     background-color: lightblue;
 }
 
+.info-box {
+    background-color: lightblue;
+    width: 100%;
+    border-radius: 25px;
+    padding: 20px;
+    height: 220px;
+    margin-bottom: 20px;
+}
+
 /* Header section */
 
 .heading {
@@ -49,11 +58,18 @@ nav {
 
 #about-me {
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 #about-me a {
     color: black;
     font-weight: bold;
+}
+
+/* Why book section */
+
+.why-book-title {
+    margin-bottom: 10px;
 }
 
 /* Footer */
