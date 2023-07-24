@@ -22,6 +22,7 @@ nav {
 .heading {
     min-height: 240px;
     background-color: lightgray;
+    background: url('../images/header-image.jpg');
     letter-spacing: 1px;
     color: white;
 }
@@ -52,9 +53,6 @@ nav {
 
 #about-me a {
     color: black;
-}
-
-#about-me a:hover {
     font-weight: bold;
 }
 
@@ -70,7 +68,6 @@ footer {
     width: 100%;
     bottom: 0;
     right: 0;
-	z-index: 3;
 }
 
 /* Taken from Code Institute lesson https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/b51f7b8b815c4bcd9979d2281b6d97a9/?child=last */
@@ -94,10 +91,20 @@ footer {
     background-color: black;
 }
 
+.list-inline {
+    margin-top: 10px;
+}
 .list-inline-item:not(:last-child) {
     margin: 0;
 }
 
+.footer-text {
+    margin-top: 15px;
+}
+
+p.footer-text a {
+    color: black;
+}
 /* Media queries */
 
 @media screen and (max-width: 480px) {
@@ -130,7 +137,6 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-
 
 }
 
