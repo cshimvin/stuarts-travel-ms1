@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:wght@100;200;300;400;500;600;700;800;900');
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@100;200;300;400;500;600;700;800&display=swap');
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -8,6 +9,21 @@ body {
 
 .text-right {
     text-align: right;
+}
+
+.section-title {
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+a, a:hover {
+    color: #000000;
+    font-weight: bold;
 }
 
 /* Navigation layout */
@@ -35,11 +51,13 @@ nav {
 }
 
 .heading-title {
-    font-weight: 100;
+    font-family: "REM", sans serif;
+    font-weight: 300;
 }
 
 .heading-subtitle {
-    font-weight: 200;
+    font-family: "REM", sans serif;
+    font-weight: 300;
 }
 
 .inline-block {
@@ -57,19 +75,41 @@ nav {
 #about-me {
     padding: 20px;
     margin-bottom: 20px;
+    margin-top: 25px;
 }
 
-#about-me a {
-    color: black;
-    font-weight: bold;
+/* Offers */
+
+#offers {
+    margin-top: 25px;
 }
 
-/* Why book section */
+/* Contact form */
 
-.why-book-title {
-    margin-bottom: 10px;
-    padding: 5px;
+#contact-me {
+    margin-top: 25px;
 }
+
+.contact-title {
+    margin-bottom: 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    left: 10%;
+    padding: 30px;
+    margin: 0 auto;
+  }
+
+  .text-input {
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+  }
+
+  .text-input:hover {
+    border-color: blue;
+  }
 
 /* Footer */
 
