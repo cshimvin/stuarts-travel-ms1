@@ -18,11 +18,9 @@ nav {
 }
 
 .info-box {
-    background-color: lightblue;
     width: 100%;
     border-radius: 25px;
     padding: 20px;
-    height: 220px;
     margin-bottom: 20px;
 }
 
@@ -70,6 +68,7 @@ nav {
 
 .why-book-title {
     margin-bottom: 10px;
+    padding: 5px;
 }
 
 /* Footer */
@@ -121,6 +120,7 @@ footer {
 p.footer-text a {
     color: black;
 }
+
 /* Media queries */
 
 @media screen and (max-width: 480px) {
@@ -153,7 +153,6 @@ p.footer-text a {
         margin-left: auto;
         margin-right: auto;
     }
-
 }
 
 @media screen and (min-width: 601px) {
