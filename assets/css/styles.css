@@ -21,6 +21,9 @@ h1, h2 {
     font-weight: 300;
 }
 
+h3 {
+    font-size: 1.5em;
+}
 a, a:hover {
     color: #000000;
     font-weight: bold;
@@ -34,10 +37,14 @@ nav {
 }
 
 .info-box {
-    width: 100%;
+    width: 90%;
     border-radius: 25px;
     padding: 20px;
     margin-bottom: 20px;
+    background-color: lightblue;
+    min-height: 320px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Header section */
@@ -84,6 +91,24 @@ nav {
     margin-top: 25px;
 }
 
+.offer-title {
+    text-align: center;
+}
+
+.offer-price {
+    font-family: "REM", sans-serif;
+    font-weight: bold;
+}
+
+.info-box img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.offer-content {
+    height: 400px;
+}
 /* Contact form */
 
 #contact-me {
@@ -144,6 +169,11 @@ footer {
 
 .social-networks li a i:hover {
     background-color: black;
+}
+
+.social-networks {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .list-inline {
@@ -209,5 +239,11 @@ p.footer-text a {
         display: block;
         float: right;
         margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .info-box {
+        min-height: 100px;
     }
 }
