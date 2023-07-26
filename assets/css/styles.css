@@ -192,6 +192,7 @@ p.footer-text a {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        clear: both;
     }
 }
 
@@ -207,5 +208,6 @@ p.footer-text a {
     #main-image {
         display: block;
         float: right;
+        margin-left: 15px;
     }
 }
