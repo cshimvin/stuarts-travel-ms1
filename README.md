@@ -16,8 +16,6 @@
 - Could Have
 - Won't Have (for now)
 4. [Technologies Used](#technologies-used)
-- Languages
-- Frameworks
 5. [Testing](#testing)
 - HTML Validation
 - CSS Validation
@@ -168,17 +166,44 @@ In future iterations, the following possible features could be added:
 - An online payment system for visitors to pay for holidays that they have booked.
 
 ## Technologies Used
-### Bootstrap 5
 
-### FontAwesome
-
-### Code Institute Form Dump URL
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) to create the website.
+- [CSS3](https://en.wikipedia.org/wiki/CSS3) to style the website.
+- [Bootstrap 5](https://getbootstrap.com/) was used for the layout of the site.
+- [FontAwesome](https://fontawesome.com/) was used to create some of the icons on the site.
+- [Google Fonts](https://fonts.google.com/) was used to display the typography of the site: [Montserrat](https://fonts.google.com/specimen/Montserrat) and [REM](https://fonts.google.com/specimen/REM).
+- [Code Institute Form Dump URL](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/ee2afa91c35e4268b7de2ea21fe311dd/) was used to make the form submit button work and to display what text would be sent to the server. This is useful for user testing.
+- [Git](https://git-scm.com/) was used for version control of the code.
+- [GitHub](https://github.com/) was used as a repository for the code and GitHub pages was used to host the site.
 
 ## Testing
-Check links work
-Test form input including erroneous input
-W3C HTML5 checker
-W3C CSS3 checker
+
+### HTML Validation
+
+All pages were tested using the [W3C HTML validator](https://validator.w3.org/nu/) and no errors were found. The results are in PDF documents: [index.html](assets/images/documentation/html-validation-index.pdf), [contact.html](assets/images/documentation/html-validation-contact.pdf) and [offers.html](assets/images/documentation/html-validation-offers.pdf) validation results.
+
+### CSS Validation
+
+The CSS stylesheet styles.css was checked using the [W3C CSS validator](https://validator.w3.org/) and no errors were found. The results can be found in the [CSS validation results PDF](assets/images/documentation/css-validation.pdf).
+
+### Accessibility and Performance
+
+I checked to ensure that Aria labels and image alt text was added to all images and visual elements on the site.
+
+I also ran Lighthouse reports on desktop and mobile which passed accessibility. There were a few performance suggestions which could be implemented in future iterations.
+
+- [Lighthouse desktop report PDF](assets/images/documentation/lighthouse-desktop.pdf)
+- [Lighthouse mobile report PDF](assets/images/documentation/lighthouse-mobile.pdf)
+
+### Browser Compatibility
+
+### Device Compatibility
+
+### Testing User Stories
+
+### Check links work
+
+### Test form input including erroneous input
 
 ## Bugs
 Responsive image resizing in offer boxes
