@@ -35,7 +35,6 @@ a, a:hover {
     padding: 0px;
     margin-bottom: 20px;
     background-color: lightblue;
-    min-height: 500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -89,6 +88,11 @@ nav {
     margin-top: 25px;
 }
 
+/* Reasons why box */
+
+.reasons-box {
+    min-height: 320px;
+}
 /* Offers */
 
 #offers {
@@ -109,6 +113,10 @@ nav {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+}
+
+.offer-box {
+    min-height: 500px;
 }
 
 .offer-content {
@@ -231,9 +239,13 @@ p.footer-text a {
         margin-right: auto;
         clear: both;
     }
+
+    .reasons-box {
+        min-height: 240px;
+    }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (max-width: 601px) {
 	.heading-title {
 		font-size: 48px;
 	}
@@ -249,8 +261,8 @@ p.footer-text a {
     }
 }
 
-@media screen and (max-width: 991px) {
-    .info-box {
-        min-height: 100px;
+@media screen and (min-width: 601px) and (max-width: 991px) {
+    .reasons-box {
+        min-height: 180px;
     }
 }
