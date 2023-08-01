@@ -50,7 +50,7 @@ As a visitor, I would like the website to:
 
 ### User Stories
 - First time visitor goals
-    - As a first time visitor, I would like to easily found out about the company and the purpose of the site.
+    - As a first time visitor, I would like to easily find out about the company and the purpose of the site.
     - As a first time visitor, I want to be able to easily navigate the site and its content.
     - As a first time visitor, I want to be able to contact the business with any queries I have.
     - As a first time visitor, I want to be able to see what holidays are on offer.
@@ -61,7 +61,6 @@ As a visitor, I would like the website to:
 
 - Frequent visitor goals
     - As a frequent visitor, I would like to see the latest holiday offers.
-Offer images must be of dimension 340x255 and in JPG format
 
 ### Design and Structure
 
@@ -132,7 +131,7 @@ Smaller screens:
 
 #### Offers page - offers
 
-This page shows at least 3 of the latest offers that includes a title, image, description and a call to action to enquire about the holiday offer. These are shown side by side on larger screens and stacked above each other on smaller screens.
+This page shows at least 3 of the latest offers that includes a title, image, description and a call to action to enquire about the holiday offer. These are shown side by side on larger screens and stacked above each other on smaller screens. Offer images must be of dimension 340x255 and in JPG format
 
 On larger screens
 
@@ -178,6 +177,33 @@ In future iterations, the following possible features could be added:
 
 ## Testing
 
+###  User stories tests
+
+The user stories have been tested and the results are:
+
+| User story                                                                                   | Outcome                                                                                            | Result |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------ |
+| As a visitor, I would like to easily find out about the company and the purpose of the site. | As a visitor, I can understand that this is a travel website with the latest offers                | PASS   |
+| As a visitor, I want to be able to easily navigate the site and its content.                 | As a visitor, I can see there is consistent navigation on each page with links that work.          | PASS   |
+| As a visitor, I want to be able to contact the business with any queries I have.             | As a visitor, I can use the contact form or call them using the number on the footer of each page. | PASS   |
+| As a visitor, I want to be able to see what holidays are on offer                            | As a visitor, I can see the offers page with the latest travel offers.                             | PASS   |
+
+### Functionality
+
+The functionality for various aspects of the site was tested and the results are:
+
+| Feature            | Expected outcome                                                                                                                | Action                                                       | Result |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ------ |
+| Navbar             | When clicked it goes to the relevant page                                                                                       | Clicked the links in the navbar on each page                 | PASS   |
+| Navbar             | When the navigation elements are hovered over, the items go bold                                                                | Hovered over the navigation links on all pages               | PASS   |
+| Navbar             | When the navigation menu is displayed on a small screen it changes to a hamburger menu                                          | Resised the screen to show the hamburger menu                | PASS   |
+| Social media links | When clicked it goes to the relevant social media platform                                                                      | Clicked the links in the footer on each page                 | PASS   |
+| Form submit button | When form is completed and submit button clicked, it submits the details                                                        | Completed the form and clicked the Submit button             | PASS   |
+| Form validation    | When form fields haven't been completed the form is not submitted and an error message is displayed                             | Attempted to submit the form with form fields missing        | PASS   |
+| Form validation    | When an invalid email format is entered in the email field on the form, the form won't submit and an error message is displayed | Attempted to submit the form with an incorrect email address | PASS   |
+| Hero image         | The hero image will display on page load                                                                                        | Refreshed the pages                                          | PASS   |
+
+
 ### HTML Validation
 
 All pages were tested using the [W3C HTML validator](https://validator.w3.org/nu/) and no errors were found. The results are in PDF documents: [index.html](assets/images/documentation/html-validation-index.pdf), [contact.html](assets/images/documentation/html-validation-contact.pdf) and [offers.html](assets/images/documentation/html-validation-offers.pdf) validation results.
@@ -188,31 +214,67 @@ The CSS stylesheet styles.css was checked using the [W3C CSS validator](https://
 
 ### Accessibility and Performance
 
-I checked to ensure that Aria labels and image alt text was added to all images and visual elements on the site.
+Accessibility was checked to ensure that Aria labels and image alt text was added to all images and visual elements on the site.
 
-I also ran Lighthouse reports on desktop and mobile which passed accessibility. There were a few performance suggestions which could be implemented in future iterations.
+Lighthouse reports were also created on desktop and mobile which passed accessibility. There were a few performance suggestions which could be implemented in future iterations.
 
 - [Lighthouse desktop report PDF](assets/images/documentation/lighthouse-desktop.pdf)
 - [Lighthouse mobile report PDF](assets/images/documentation/lighthouse-mobile.pdf)
 
 ### Browser Compatibility
 
+The website has been tested on the following browsers:
+
+- Google Chrome Version 115.0.5790.110 (Official Build) (64-bit)
+- Mozilla Firefox Version 115.0.3 (64-bit)
+- Microsoft Edge Version 115.0.1901.188 (Official build) (64-bit)
+
+The layout and website works on all the above browsers.
+
 ### Device Compatibility
 
-### Testing User Stories
+The responsiveness and layout of the site has been tested on a number of devices including tablets, desktops and mobile phones from iPhone 5 to 5K screens and the website displays correctly.
+
+Chrome developer tools were used at various points during the development including when changes were made to the layout.
 
 ### Check links work
 
-### Test form input including erroneous input
+All links were tested manually and by using the [Broken Link Checker extension](https://chrome.google.com/webstore/detail/broken-link-checker/nibppfobembgfmejpjaaeocbogeonhch?utm_source=ext_sidebar&hl=en-US) on Google Chrome.
 
 ## Bugs
-Responsive image resizing in offer boxes
-Why me boxes text spilling out of container and length of boxes equal
-Responsive header text resizing
+
+The images in the offer boxes spilled out of the box when the browser window was resized. The `max-width` property was added to the CSS selector which resolved the issue.
+
+The reasons to book with me boxes on the homepage had text extending beyond the bottom of the boxes when resized. Media queries were added to resolve this issue.
+
+Heading text on the hero image was not resized on smaller screens. Media queries were added to resolve this issue.
+
+About me image on homepage had right alignment issues on Microsoft Edge when carrying out testing. A `float: right` property was added to the CSS to resolve this issue.
 
 ## Deployment
 
+### How the site was deployed
+
+The site was deployed using GitHub and is hosted on [GitHub Pages](https://cshimvin.github.io/stuarts-travel-ms1/) and was deployed as follows:
+
+- Navigate to the [GitHub repository](https://github.com/cshimvin/stuarts-travel-ms1)
+- Go to the **Settings** section
+- Click on **Pages** on the left hand side menu
+- Under Branch, select the **Master** branch then click **Save**
+- After a few minutes a link to the deployed site will appear at the top of the page
+- Any changes pushed to the main branch will take effect on the deployed site 
+
+### How to clone this repository
+
+- Go to the repository at https://github.com/cshimvin/stuarts-travel-ms1 on GitHub
+- Click on the **Code** button and copy the https URL under **Clone**
+- Open a terminal on GitBash
+- Navigate to the folder you want to store the cloned repository
+- In the terminal type `git clone` and paste the URL of the cloned repository after it then press Enter
+- The site will then be cloned to that directory
+
 ## Credits
+
 ### Images
 Any images not referenced are owned by the developer. Offer images obtained from pxhere.com and are Free for personal and commercial use. No attribution required.
 
