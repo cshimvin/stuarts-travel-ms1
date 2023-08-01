@@ -74,6 +74,14 @@ nav {
     display: inline-block;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0);
+}
+
+.active {
+    text-decoration: underline dashed lightslategray;
+}
+
 /* About me section */
 
 #main-image {
