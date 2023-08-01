@@ -17,13 +17,13 @@
 - Won't Have (for now)
 4. [Technologies Used](#technologies-used)
 5. [Testing](#testing)
+- User stories tests
+- Functionality
 - HTML Validation
 - CSS Validation
-- Accessibility
-- Performance
+- Accessibility and Performance
 - Browser Compatibility
 - Device Compatibility
-- Testing User Stories
 6. [Bugs](#bugs)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
@@ -81,7 +81,7 @@ The main goal of the business is to provide a personal service to find a perfect
 These are the features that have already been implemented on the website.
 
 #### Navigation
-There is a consistent navigation structure on all website pages which links to Home, Offers, and Contact pages. The current page the user is on is displayed in bold. This has 2 forms:
+There is a consistent navigation structure on all website pages which links to Home, Offers, and Contact pages. The current page the user is on is displayed with a dotted underline. This has 2 forms:
 
 For smaller screens
 
