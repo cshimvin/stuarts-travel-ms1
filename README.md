@@ -143,7 +143,7 @@ On smaller screens
 
 #### Contact page - contact form
 
-The emables visitors to contact the business to enquire about booking a holiday. It asks for the visitors name, email address, telephone number and details of their enquiry.
+The enables visitors to contact the business to enquire about booking a holiday. It asks for the visitors name, email address, telephone number and details of their enquiry.
 
 ![Contact form](assets/images/documentation/contact-form.jpg)
 
@@ -196,7 +196,7 @@ The functionality for various aspects of the site was tested and the results are
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ------ |
 | Navbar             | When clicked it goes to the relevant page                                                                                       | Clicked the links in the navbar on each page                 | PASS   |
 | Navbar             | When the navigation elements are hovered over, the items go bold                                                                | Hovered over the navigation links on all pages               | PASS   |
-| Navbar             | When the navigation menu is displayed on a small screen it changes to a hamburger menu                                          | Resised the screen to show the hamburger menu                | PASS   |
+| Navbar             | When the navigation menu is displayed on a small screen it changes to a hamburger menu                                          | Resized the screen to show the hamburger menu                | PASS   |
 | Social media links | When clicked it goes to the relevant social media platform                                                                      | Clicked the links in the footer on each page                 | PASS   |
 | Form submit button | When form is completed and submit button clicked, it submits the details                                                        | Completed the form and clicked the Submit button             | PASS   |
 | Form validation    | When form fields haven't been completed the form is not submitted and an error message is displayed                             | Attempted to submit the form with form fields missing        | PASS   |
